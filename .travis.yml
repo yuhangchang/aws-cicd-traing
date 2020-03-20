@@ -1,11 +1,9 @@
 language: php
 php:
   - '7.0'
-script: echo "test OK"
-
+script: echo "Test OK"
 notifications:
   email: false
-
 before_deploy:
   - zip -r latest.zip *
   - test -d deploy || mkdir deploy
